@@ -1,0 +1,29 @@
+{
+  "name": "rory",
+  "version": "0.0.1",
+  "description": "bot for fb",
+  "main": "app.js",
+  "dependencies": {
+    "fb": "^1.0.2",
+    "sqlite3": "^3.1.1",
+    "nw-gyp": "^0.13.0",
+    "request": "^2.69.0",
+    "cheerio": "^0.20.0"
+  },
+  "devDependencies": {
+    "sqlite3": "^3.1.1"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/devhacksperu/motor-nodejs.git"
+  },
+  "keywords": [
+    "bot"
+  ],
+  "author": "Elvis River, Carlos Chavez",
+  "license": "MIT",
+  "homepage": "https://bitbucket.org/devhacksperu/motor-nodejs#readme"
+}
