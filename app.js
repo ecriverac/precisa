@@ -67,16 +67,7 @@ var fbCheckConversations=function(){
               responder(_dataUser,answer);              
             });
           }
-          contadorComentarios++;
-          /*console.log(contadorComentarios);*/
-          if(contadorComentarios==totalComentarios && !finalizado){
-            console.log("fin de recorrido");
-            finalizado=true;
-            setTimeout(function(){
-              console.log("iniciando bot");
-              fbCheckConversations();
-            },6000);
-          }
+          
       });
     }else{
       contadorComentarios++;
