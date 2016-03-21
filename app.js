@@ -28,7 +28,7 @@ function fnRespuesta(_data){
 FB.setAccessToken(oConfig.AT());
 
 var fbCheckConversations=function(){
-  FB.api('me/conversations?fields=messages.fields(id,created_time,from,message).limit(6)', function (res) {
+  FB.api('me', function (res) {
   if(!res || res.error) {
    console.log(!res ? 'error occurred' : res.error);
    return;
@@ -83,7 +83,7 @@ function responder(_data,mensaje){
   //return false;
   var mensaje=((mensaje[0])? mensaje[1] : _data[1].from.name+", "+mensaje[1]);
   console.log("facebook:"+mensaje);
-  FB.api("/"+_data[1].idmensaje+"/messages",{method: 'post', message: mensaje},
+  FB.api("/"+_data[1].idmensaje+"",{method: 'post', message: mensaje},
     function(res){
       if(!res || res.error){
         console.log(!res ? 'error occurred': res.error);
