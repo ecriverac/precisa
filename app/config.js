@@ -17,4 +17,4 @@ var oConfig = {
 	init:function()	{
 
 	}
-}
+}   
